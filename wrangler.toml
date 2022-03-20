@@ -1,4 +1,4 @@
-name = "remix-cloudflare-workers"
+name = "cache-experiment"
 type = "javascript"
 
 zone_id = ""
