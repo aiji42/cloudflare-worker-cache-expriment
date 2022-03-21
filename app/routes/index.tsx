@@ -10,7 +10,7 @@ export const loader: LoaderFunction = async ({
   const now = new Date().toString();
   const response = new Response(now, {
     headers: {
-      "Cache-Control": "max-age=10",
+      "Cache-Control": "max-age=15",
     },
   });
 
@@ -18,7 +18,7 @@ export const loader: LoaderFunction = async ({
   return response;
 };
 
-export const header: HeadersFunction = ({ loaderHeaders }) => {
+export const headers: HeadersFunction = ({ loaderHeaders }) => {
   return loaderHeaders;
 };
 
